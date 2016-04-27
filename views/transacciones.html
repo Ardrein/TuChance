@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>TRANSACCIONES-TU CHANCE</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="banner" >
+
+			<header>
+				<h2>TU CHANCE</h2>
+			</header>
+
+		</div>
+		<div class="menuNav">
+			<nav class="navegacion">
+				<ul>
+					<li><a href="clientes.html">CLIENTES</a></li>
+					<li><a href="juegos.html">JUEGOS</a>
+						<ul class="submenu">
+							<li><a href="">JUEGO A</a></li>
+							<li><a href="">JUEGO B</a></li>
+							<li><a href="">JUEGO C</a></li>
+							<li><a href="">JUEGO D</a></li>
+						</ul>
+
+					</li>
+					<li><a href="resultados.html">RESULTADOS</a></li>
+					<li><a href="transacciones.html">TRANSACCIONES</a></li>
+					<li><a href="balance.html">BALANCE</a></li>
+					<li><a href="mensajes.html">MENSAJES</a></li>
+				</ul>
+			</nav>
+			<span id="cuenta"></span>
+		</div>
+
+		<div class="principalIn">
+			<header><h3>Transacciones</h3></header>
+			
+			<div id="balance">
+				<div class="izq">
+					<p>
+						<input type="search" name="buscarCliente" placeholder="buscar cliente" >
+						<button type="button"><img src="../css/images/search.jpg"></button>
+					</p>
+					<p>
+						<label name="cedula" for="cedula">Cedula</label>
+						<input name="cedula" placeholder="resultado busqueda"></input>
+					</p>
+
+					<p class="submit">
+						<button type="button" >+</button>
+					</p>
+					<div class="total">
+						<p>
+
+							<label class="tlabel">TOTAL</label>
+							<label>EL valor va aqui</label>
+						</p>
+						
+					</div>
+				</div>
+				<div class="izq">
+
+					<p>
+						<label>Apuestas</label>
+
+						
+					</p>
+					<p class="submit">
+						<button type="button" >+</button>
+					</p>
+					<table>
+						<tr class="first">
+							<td>Apuestas</td>
+						</tr>
+						<tr>
+							<td>Apuesta1</td>
+						</tr>
+					</table>
+				</div>
+				<div class="der">
+					<p>
+						<select>
+							<option>Juego</option>
+							<option>Juego1</option>
+						</select>
+
+						<select id="selectModalidad">
+							<option>Modalidad</option>
+							<option>unica</option>
+						</select>
+
+					</p>
+
+					<p>
+						<label>Loteria</label>
+					</p>
+					<p>
+						<input name="numLoteria" placeholder="numeroLoteria" type="text"></input>
+
+						<select id="selectSerie">
+							<option>Serie</option>
+							<option>01</option>
+						</select>
+
+					</p>
+					<p class="valor">
+						<label>Fecha</label>
+						<input type="date"></input>
+					</p>
+					<p class="valor">
+						<label>Hora</label>
+						<input type="time"></input>
+					</p>
+					<p class="valor">
+						<label>Valor</label>
+						<input type="text"></input>
+					</p>
+					<p class="valor">
+						<button type="button" >AGREGAR</button>
+					</p>
+				</div>
+			</div>
+
+			<div id="chat">
+				<div class="chatHeader">
+					<span></span>
+					<label id="chatNombre">Chat con</label>
+				</div>
+				<div class="chatBody">
+					<textarea id="chatArea"></textarea>
+				</div>
+				<div class="chatInput">
+					<textarea id="chatInput"></textarea>
+					<button type="button" id="chatSend">-></button>
+				</div>
+				<div class="chatTabs">
+					
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<footer>PIE DE PAGINA</footer>
+
+
+</body>
+</html>

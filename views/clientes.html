@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>CLIENTES-TU CHANCE</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="banner" >
+
+			<header>
+				<h2>TU CHANCE</h2>
+			</header>
+
+		</div>
+		<div class="menuNav">
+			<nav class="navegacion">
+				<ul>
+					<li><a href="clientes.html">CLIENTES</a></li>
+					<li><a href="juegos.html">JUEGOS</a>
+						<ul class="submenu">
+							<li><a href="">JUEGO A</a></li>
+							<li><a href="">JUEGO B</a></li>
+							<li><a href="">JUEGO C</a></li>
+							<li><a href="">JUEGO D</a></li>
+						</ul>
+
+					</li>
+					<li><a href="resultados.html">RESULTADOS</a></li>
+					<li><a href="transacciones.html">TRANSACCIONES</a></li>
+					<li><a href="balance.html">BALANCE</a></li>
+					<li><a href="mensajes.html">MENSAJES</a></li>
+				</ul>
+			</nav>
+			<span id="cuenta"></span>
+		</div>
+
+		<div class="principalIn">
+			<header><h3>Clientes</h3></header>
+			
+			<div id="balance">
+				<div class="columna">
+					<div  class="tabla">
+						<p>Agregar Cliente:</p>
+
+						<p  class="pBuscar">
+							<label name="cedula" for="cedula">Cedula</label>
+							<input name="cedula" placeholder="cedula"></input>
+						</p>
+
+						<p class="pDer">
+							<button type="button" class="btnAdd">+</button>
+						</p>
+					</div>
+
+					<div  class="tabla">
+						<label>Apuestas del cliente:</label>
+						<p class="pBuscar">
+							<input type="search" name="buscarCliente" placeholder="buscar cliente" >
+							<button type="button"><img src="../css/images/search.jpg"></button>
+						</p>
+						<p class="pDer">
+							<button type="button">Mostrar</button>
+						</p>
+						
+					</div>
+				</div>
+				<div class="grafica">
+					
+					<p>Apuestas del cliente:</p>
+
+					<table>
+						<tr class="first">
+							<td>Loteria</td>
+							<td>Serie</td>
+							<td>Fecha</td>
+							<td>Total Apostado($)</td>
+						</tr>
+						<tr>
+							<td>1234</td>
+							<td>99</td>
+							<td>02/03/2004</td>
+							<td>100</td>
+						</tr>
+						<tr>
+							<td>1234</td>
+							<td>99</td>
+							<td>02/03/2004</td>
+							<td>100</td>
+						</tr>
+					</table>
+					
+
+					
+				</div>
+				
+			</div>
+			<div id="chat">
+				<div class="chatHeader">
+					<span></span>
+					<label id="chatNombre">Chat con</label>
+				</div>
+				<div class="chatBody">
+					<textarea id="chatArea"></textarea>
+				</div>
+				<div class="chatInput">
+					<textarea id="chatInput"></textarea>
+					<button type="button" id="chatSend">-></button>
+				</div>
+				<div class="chatTabs">
+					
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+	<footer>PIE DE PAGINA</footer>
+
+
+</body>
+</html>
