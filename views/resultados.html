@@ -2,15 +2,21 @@
 <html>
 <head>
 	<title>RESULTADOS-TU CHANCE</title>
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/copy.css">
 </head>
 <body>
 	<div class="wrapper">
 		<div class="banner" >
-
+			<a href="" class="menu-btn">
+			</a>
 			<header>
 				<h2>TU CHANCE</h2>
 			</header>
+			<div class="user">
+				<button id="user">
+					<img src="/tuChance/css/images/user.jpg">
+				</button>
+			</div>
 
 		</div>
 		<div class="menuNav">
@@ -38,62 +44,64 @@
 		<div class="principalIn">
 			<header><h3>Resultados</h3></header>
 			
-			<div id="balance">
-				<div class="columna">
+			<div class="caja">
+				<div class="fila">
 
 					<div class="tabla2">
-						<p>
+						<p class="pBuscar">
 							<label>Mostrar:</label>
-						</p>
-						<p>
+
 							<select>
 								<option>Juegos</option>
 								<option>Juego A</option>
 							</select>
 						</p>
-						<label>Desde</label>
-						<section>
-							<input type="date"></input>
-						</section>
+						<p class="pBuscar">
+							<label>Desde</label>
+								<input type="date"></input>
 
-						<label>Hasta</label>
-						<section>
-							<input type="date"></input>
+						</p>
 
-						</section>
+						<p class="pBuscar">
+							<label>Hasta</label>
+								<input type="date"></input>
+
+						</p>
 						<p class="pDer">
-							<button type="button">MOSTRAR</button></p>	
+							<button type="button">MOSTRAR</button>
+						</p>	
+					</div>
+
+					<div class="tabla2">
+
+						<p>Resultados Juegos:</p>
+
+						<table>
+							<tr class="first">
+								<td>Loteria</td>
+								<td>Serie</td>
+								<td>Fecha</td>
+								<td>Premio($)</td>
+							</tr>
+							<tr>
+								<td>1234</td>
+								<td>99</td>
+								<td>02/03/2004</td>
+								<td>100</td>
+							</tr>
+							<tr>
+								<td>1234</td>
+								<td>99</td>
+								<td>02/03/2004</td>
+								<td>100</td>
+							</tr>
+						</table>
+
+
+
 					</div>
 				</div>
-				<div class="grafica">
-					
-					<p>Resultados Juegos:</p>
 
-					<table>
-						<tr class="first">
-							<td>Loteria</td>
-							<td>Serie</td>
-							<td>Fecha</td>
-							<td>Premio($)</td>
-						</tr>
-						<tr>
-							<td>1234</td>
-							<td>99</td>
-							<td>02/03/2004</td>
-							<td>100</td>
-						</tr>
-						<tr>
-							<td>1234</td>
-							<td>99</td>
-							<td>02/03/2004</td>
-							<td>100</td>
-						</tr>
-					</table>
-					
-
-					
-				</div>
-				
 			</div>
 			<div id="chat">
 				<div class="chatHeader">
@@ -108,7 +116,7 @@
 					<button type="button" id="chatSend">-></button>
 				</div>
 				<div class="chatTabs">
-					
+
 				</div>
 			</div>
 
