@@ -42,21 +42,21 @@ body{
 	
 }
 
-.banner .menu-btn{
-	left: 20px;
-    top: 6px;
-    position: absolute;
+.banner .menu-a{
+	left: 0px;
+	top: 0px;
+	position: absolute;
 }
 
-.banner .menu-btn:before{
+.banner .menu-a:before{
 	content: "";
-    position: absolute;
-    left: 0;
-    top: 0.15em;
-    width: 2em;
-    height: 0.25em;
-    background: black;
-    box-shadow: 0 0.75em 0 0 black, 0 1.5em 0 0 black;
+	position: absolute;
+	left: 0;
+	top: 0.15em;
+	width: 2em;
+	height: 0.25em;
+	background: black;
+	box-shadow: 0 0.75em 0 0 black, 0 1.5em 0 0 black;
 
 }
 
@@ -65,24 +65,35 @@ body{
 	margin: auto 47px;
 }
 
+.banner header a{
+	color: inherit;
+	text-decoration: none;
+}
+
 .banner h2{
 	padding:5px;
 	margin:0;
 	white-space: nowrap;
 }
 
-.banner .user{
-	right: 20px;
-    top: 6px;
-    position: absolute;
+.banner .menu-container{
+	left: 20px;
+	top: 6px;
+	position: absolute;
 }
 
-.banner .user button{
+.banner .user{
+	right: 20px;
+	top: 6px;
+	position: absolute;
+}
+
+.banner button{
 	background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    width: 27px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	width: 27px;
 	height: 27px;
 	padding: 0;
 
@@ -312,15 +323,15 @@ Navs
 */
 .menuNav{
 	height: 100%;
-    margin: 40px 15px 0 0;
-    width: 10%;
-    position: fixed;
-    z-index: 998;
-    float: left;
-    min-width: 130px;
-    top: 0;
+	margin: 40px 15px 0 0;
+	width: 10%;
+	position: fixed;
+	z-index: 998;
+	float: left;
+	min-width: 130px;
+	top: 0;
 
-    box-shadow: 5px 10px 15px 5px black;
+	box-shadow: 5px 10px 15px 5px black;
 }
 
 
@@ -410,6 +421,7 @@ Principal
 	display: table;
 	margin: 60px 2% 4% 10%;
 	position: relative;
+	right: -5%;
 
 
 
@@ -469,6 +481,47 @@ Principal
 
 }
 
+.columna2{
+	display: block;
+	width: 31%;
+	margin: 0 2% 10px 0;
+	padding: 2%;
+	border-collapse: separate;
+	border-spacing: 0em;
+	float: left;
+	box-shadow: 0em 0em 0.6em 0.01em black;
+
+	position: relative;
+
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+
+	height: 100%;
+
+}
+
+.columna2 .buscar button{
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	width: 27px;
+	height: 27px;
+	padding: 0;
+
+	box-shadow: none;
+
+
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+.columna2 .buscar button img{
+	width: 20px;
+	height: 20px;
+}
+
 .fila{
 	display: block;
 	padding: 2%;
@@ -482,7 +535,7 @@ Principal
 	-webkit-border-radius: 0.5em;
 	-moz-border-radius: 0.5em;
 	border-radius: 0.5em;
-	}
+}
 
 .tabla{
 	display: block;
@@ -495,26 +548,18 @@ Principal
 	box-shadow: 0.1em 0.1em 0.1em 0.1em #000;
 }
 
-.tabla p, .tabla2 p{
+.tabla p, .tabla2 p, .columna p, .columna2 p{
 	width: 100%;
-    text-align: left;
-    display: table;
-    height: 20px;
+	text-align: left;
+	display: table;
+	height: 20px;
+	position: relative;
 }
 
-.tabla p label{
+.tabla p label, .columna2 p label{
 	display: table-cell;
-    width: 20%;
-    padding-right: 22px;
-    vertical-align: bottom;
-}
-
-.tabla p input{
-	width: 75%;
-    display: table-cell;
-    max-width: 250px;
-    position: absolute;
-    right: 5%;
+	width: 20%;
+	vertical-align: bottom;
 }
 
 .tabla select, .tabla2 select{
@@ -523,9 +568,7 @@ Principal
 
 
 
-.tabla .pDer, .tabla2 .pDer{
-	text-align: right;
-}
+
 
 .tabla2{
 	display: inline-block;
@@ -538,15 +581,33 @@ Principal
 	box-shadow: 0.1em 0.1em 0.1em 0.1em #000;
 }
 
-.tabla2 p input[type="Date"]{
+.tabla p input, .tabla2 p input, .columna input, .columna2 input{
 	position: relative;
-    width: 60%;
-    margin-left: 20%;
-    right: 0;
-    max-width: 150px;
+	width: 70%;
+	right: 0;
+	max-width: 150px;
+	float: right;
 }
 
+.tabla .pDer, .tabla2 .pDer, .columna .pDer, .columna2 .pDer{
+	text-align: right;
+}
 
+* input[type="date"]{
+	width: 80%;
+	position: absolute;
+	float: none;
+}
+
+.total{
+	position: absolute;
+    bottom: 2%;
+    width: 96%;
+    padding: 2%;
+    margin: 2%;
+    display: block;
+    left: 0;
+}
 
 /*
 Tablas
@@ -592,16 +653,19 @@ Tablas
 }
 
 .cuerpoJuego{
-	display: table;
+	display: block;
+	vertical-align: middle;
+	padding: 2% 2% 5%;
+	
 }
 
-.cuerpoJuego div{
-	vertical-align: middle;
+.cuerpoJuego .descripcionJuego p{
 	text-align: justify;
 }
 .cuerpoJuego .imagen{
 	display: block;
-	width: 100%;
+	width: 80%;
+	margin: auto;
 	vertical-align: middle;
 	text-align: center;
 }
