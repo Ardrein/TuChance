@@ -13,10 +13,14 @@ body{
 	color: white;
 }
 
+.view{
+	height: 100%;
+}
 
 .wrapper{
 	width: 100%;
 	min-height: 100%;
+	height: 100%;
 	background: #ACC0F2; 
 	padding-bottom: 8%;
 	overflow:auto;
