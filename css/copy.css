@@ -870,7 +870,7 @@ CHAT
 }
 
 .chatAdmin{
-	height: 70%;
+	height: 100%;
 	display: table;
 	width: 100%;
 	padding: 2%;
@@ -881,6 +881,7 @@ CHAT
 	width: 100%;
 	height: 5%;
 	margin-bottom: 0.5%;
+	border: solid transparent 1px;
 }
 
 .chatBody2{
@@ -889,33 +890,44 @@ CHAT
 	min-height: 200px;
 	display: block;
 }
+
+.chatAdmin textarea{
+	padding: 2%;
+	display: table;
+}
+
 .chatBody2> textarea{
 	width: 100%;
 	height: 95%;
 	overflow-y:scroll;
 	resize:none;
-	display: table;
 }
 
 .chatInput2{
 	width: 100%;
-	display: inline-flex;
+	display: block;
 	height: 20%;
 	padding: 0.5% 0;
 
 }
 
 .chatInput2>textarea{
-	width: 85%;
+	width: 80%;
 	min-width: 100px;
+	height: 100%;
 	overflow-y:scroll;
 	resize:none;
+	display: inline-block;
 
 }
+
+
 
 .chatInput2>button {
 	width: 10%;
 	vertical-align: top;
+	height: 100%;
+		display: inline-block;
 }
 
 .chatAdmin .sendAll{
@@ -924,6 +936,7 @@ CHAT
 
 .chatAdmin .sendAll button{
 	width: 100%;
+
 }
 
 /*
