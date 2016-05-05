@@ -3,13 +3,13 @@
 <head>
 	<title>TU CHANCE</title>
 
-	<script type="text/javascript" src="js/angular.js"></script>
-	<script type="text/javascript" src="js/angular-route.js"></script>
+	<script type="text/javascript" src="/TuCHance/js/angular.js"></script>
+	<script type="text/javascript" src="/TuCHance/js/angular-route.js"></script>
 
 	<script type="text/javascript">angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="'+window.location.pathname+'" />'));</script>
 
-	<script type="text/javascript" src="js/app.js"></script>
-	<script type="text/javascript" src="js/main.ctrl.js"></script>
+	<script type="text/javascript" src="/TuCHance/js/app-admn.js"></script>
+	<script type="text/javascript" src="/TuCHance/js/main.ctrl.js"></script>
 	<link rel="stylesheet" type="text/css" href="/TuChance/css/copy.css">
 
 
@@ -39,18 +39,15 @@
 			<nav class="navegacion">
 				<ul>
 					<li><a href="#clientes">CLIENTES</a></li>
-					<li><a href="#juegos">JUEGOS</a>
+					<li><a href="#empleados">EMPLEADOS</a>
+					</li>
+					<li><a href="">AGREGAR</a>
 						<ul class="submenu">
-							<li><a href="">JUEGO A</a></li>
-							<li><a href="">JUEGO B</a></li>
-							<li><a href="">JUEGO C</a></li>
-							<li><a href="">JUEGO D</a></li>
+							<li><a href="#agregar">JUEGOS ACTIVOS</a></li>
 						</ul>
 
 					</li>
-					<li><a href="#resultados">RESULTADOS</a></li>
-					<li><a href="#transacciones">TRANSACCIONES</a></li>
-					<li><a href="#balance">BALANCE</a></li>
+					<li><a href="#balance">BALANCE DIARIO</a></li>
 					<li><a href="#mensajes">MENSAJES</a></li>
 				</ul>
 			</nav>
@@ -70,7 +67,7 @@
 					<button type="button" id="chatSend">-></button>
 				</div>
 				<div class="chatTabs">
-
+					
 				</div>
 			</div>
 			

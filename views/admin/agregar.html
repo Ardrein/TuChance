@@ -1,43 +1,9 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<title>AGREGAR-TU CHANCE</title>
-	<link rel="stylesheet" type="text/css" href="../../css/main.css">
-</head>
-<body>
-	<div class="wrapper">
-		<div class="banner" >
-
-			<header>
-				<h2>TU CHANCE</h2>
-			</header>
-
-		</div>
-		<div class="menuNav">
-			<nav class="navegacion">
-				<ul>
-					<li><a href="clientes.html">CLIENTES</a></li>
-					<li><a href="empleados.html">EMPLEADOS</a>
-					</li>
-					<li><a href="">AGREGAR</a>
-						<ul class="submenu">
-							<li><a href="agregar.html">JUEGOS ACTIVOS</a></li>
-						</ul>
-
-					</li>
-					<li><a href="balance.html">BALANCE DIARIO</a></li>
-					<li><a href="mensajes.html">MENSAJES</a></li>
-				</ul>
-			</nav>
-			<span id="cuenta"></span>
-		</div>
-
 		<div class="principalIn">
 			<header><h3>Agregar</h3></header>
 			
 			<div class="caja">
-				<div class="fila">
-					<div  class="tabla">
+				<div class="fila2">
+					<div  class="columna">
 						<p>Juegos Activos</p>
 						<p class="linea">
 							Juego: 
@@ -46,18 +12,18 @@
 							</select>
 						</p>
 
-						<p class="pBuscar">
+						<p>
 							<label>Desde: </label>
 							<input type="date">
 						</p>
-						<p class="pBuscar">
+						<p>
 							<label>Hasta: </label>
 							<input type="date">
 						</p>
 						<p>
 							Limite de apuestas
 						</p>
-						<p class="pBuscar">
+						<p>
 							<label>Cantidad: </label>
 							<input type="text">
 						</p>
@@ -67,7 +33,7 @@
 						</p>
 					</div>
 
-					<div  class="tabla">
+					<div  class="columna">
 						<p>Tarifas Modalidad</p>
 						<p class="linea">
 							Juego: 
@@ -84,18 +50,20 @@
 						<p>
 							Cantidad minima de apuesta ($)
 						</p>
-						<p class="pBuscar">
+						<p>
 							<label>Cantidad: </label>
 							<input type="text">
 						</p>
-						<label>Reglas: </label>
-						<p class="pBuscar">
+						<p>
+							<label>Reglas: </label>
+						</p>
+						<p>
 							
 							<textarea></textarea>
 						</p>
 
 						
-						<p class="pBuscar">
+						<p>
 							<label>Premio: </label>
 							<input type="text">
 						</p>
@@ -108,7 +76,7 @@
 						
 					</div>
 				</div>
-				<div class="fila">
+				<div class="fila2">
 					<div  class="tabla">
 						<p>
 							Valores Minimos de apuestas por modalidad
@@ -119,58 +87,29 @@
 								<option>Juego</option>
 							</select>
 						</p>
-						<div class="imagen">
 
-							<table>
-								<tr class="first">
-									<td>Modalidad</td>
-									<td>Valor</td>
-									<td>Habilitado</td>
-								</tr>
-								<tr>
-									<td>facil</td>
-									<td>100</td>
-									<td><input type="checkbox"></td>
+						<table>
+							<tr class="first">
+								<td>Modalidad</td>
+								<td>Valor</td>
+								<td>Habilitado</td>
+							</tr>
+							<tr>
+								<td>facil</td>
+								<td>100</td>
+								<td><input type="checkbox"></td>
 
-								</tr>
-								<tr>
-									<td>dificil</td>
-									<td>10000</td>
-									<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td>dificil</td>
+								<td>10000</td>
+								<td><input type="checkbox"></td>
 
-								</tr>
-							</table>
-						</div>
+							</tr>
+						</table>
 					</div>
 
 				</div>
 			</div>
 
 		</div>
-
-		<div id="chat">
-			<div class="chatHeader">
-				<span></span>
-				<label id="chatNombre">Chat con</label>
-			</div>
-			<div class="chatBody">
-				<textarea id="chatArea"></textarea>
-			</div>
-			<div class="chatInput">
-				<textarea id="chatInput"></textarea>
-				<button type="button" id="chatSend">-></button>
-			</div>
-			<div class="chatTabs">
-
-			</div>
-		</div>
-
-
-	</div>
-
-</div>
-<footer>PIE DE PAGINA</footer>
-
-
-</body>
-</html>
