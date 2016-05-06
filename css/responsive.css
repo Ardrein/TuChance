@@ -30,13 +30,6 @@
 		width: 100%;
 	}
 
-	.banner{
-
-
-		background: red;
-
-	}
-
 	.caja{
 		height: 90%;
 	}
@@ -149,7 +142,7 @@
 
 	.chatAdmin .sendAll button{
 		margin-top: 10px;
-		width: 9%;
+		width: 100%;
 	}
 
 	.linea select{
@@ -214,13 +207,6 @@
 		right: 0;
 	}
 
-	.banner{
-
-
-		background: black;
-
-	}
-
 	.caja{
 		height: 90%;
 	}
@@ -246,13 +232,35 @@
 		padding: 0;
 		box-shadow: none;
 	}
+
+	.columna{
+		float: none;
+		width: 100%;
+		padding: 3%;
+	}
+
+	.columna img {
+		max-width: 400px;
+	}
 	.columna2{
 		float: none;
 		width: 100%;
 		padding: 3%;
 	}
 
+	.columna2 .pDer button{
+		min-width: 15%;
+		box-shadow: none;
+		padding: 1%;
+	}
+
 	.columna2 input[type="date"], .columna2 input[type="time"]{
+		width: 100%;
+		position: relative;
+		float: none;
+	}
+
+	.columna input[type="date"], .columna input[type="time"]{
 		width: 100%;
 		position: relative;
 		float: none;
@@ -281,12 +289,22 @@
 		margin: 5px 0;
 	}
 
+	.columna2 input, .columna p input, .tabla p input{
+		max-width: 250px;
+		float: none;
+		width: 100%;
+	}
+
+	.chatInput2>textarea{
+		margin: 0 4% 0 0;
+	}
+
 
 
 
 	.chatInput2>button{
 		padding: 0;
-		width: 15%;
+		width: 9%;
 	}
 
 	.tabla{
@@ -303,8 +321,19 @@
 	}
 
 	.principalIn table{
-		width: 70%;
-		margin: auto;
+		font-size: 10px;
+		width: 90%;
+		margin: 2% auto;
+
+	}	
+
+	.linea select{
+		width: 50%;
+		max-width: 250px;
+	}
+
+	.chatAdmin .sendAll button{
+		margin-top: 10px;
 	}
 
 
@@ -320,7 +349,7 @@
 @media only screen and (max-width: 320px){
 
 
-.loginMain{
+	.loginMain{
 		width: 100%;
 		border-collapse: collapse;
 		display: block;
@@ -354,32 +383,192 @@
 	}
 
 	.campos label{
-		    width: 100%;
-    padding: 0;
-    display: block;
+		width: 100%;
+		padding: 0;
+		display: block;
 	}
 
 	.campos input{
-		    width: 100%;
-    display: block;
-    max-width: 300px;
-    position: relative;
-    right: 0;
+		width: 100%;
+		display: block;
+		max-width: 300px;
+		position: relative;
+		right: 0;
 	}
 
 	.banner{
 
+		height: 80px;
 
-		background: yellow;
+	}
+	.banner header{
+		margin-right: 0;
+	}
 
+	.banner h2{
+		font-size: 15px;
+		height: 80px;
+		margin: auto 0;
+		padding: 25px 0;
+	}
+
+	.banner .user {
+		right: initial;
+		left: 20px;
+		top: 46px;
+		position: absolute;
+		width: 27px;
+	}
+
+	.menuNav{
+		margin-top: 80px;
 	}
 
 	.principalIn{
-		font-size: small;
+		font-size: smaller;
 		width: 100%;
-		margin: 50px 0 0 0;
+		margin: 90px 0 0 0;
 		right: 0;
 		padding: 1%;
 	}
+
+
+	.principalIn button, input[type="submit"]{
+		padding: 1%;
+		font-size: smaller;
+	}
+
+	.principalIn>header{
+		margin-bottom: 10px;
+	}
+
+	.caja{
+		height: 90%;
+	}
+
+	.fila, .fila2, .caja{
+		padding: 0;
+		box-shadow: none;
+	}
+
+	.columna{
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+
+	.columna img {
+		max-width: 400px;
+	}
+	.columna2{
+		float: none;
+		width: 100%;
+		padding: 3%;
+	}
+
+	.columna2 .pDer button{
+		min-width: 15%;
+		box-shadow: none;
+		padding: 1%;
+	}
+
+	.columna2 input[type="date"], .columna2 input[type="time"]{
+		width: 100%;
+		position: relative;
+		float: none;
+	}
+
+	.columna input[type="date"], .columna input[type="time"]{
+		width: 100%;
+		position: relative;
+		float: none;
+	}
+
+	.columna2 p label{
+		display: block;
+	}
+
+	.columna2 p{
+		display: block;
+		height: auto;
+	}
+	.columna2 .pDer button{
+		min-width: 15%;
+	}
+
+
+	.columna2 .total p label{
+		display: table-cell;
+	}
+
+	.columna2 p input[type="text"]{
+		float: none;
+		width: 100%;
+		margin: 5px 0;
+	}
+
+	.columna2 input, .columna p input, .tabla p input{
+		max-width: 250px;
+		float: none;
+		width: 100%;
+	}
+
+	.chatInput2>textarea{
+		margin: 0 4% 0 0;
+		width: 84%;
+		min-width: 0%;
+	}
+
+
+
+
+	.chatInput2>button{
+		padding: 0;
+		width: 9%;
+	}
+
+	.tabla{
+		box-shadow: none;
+		padding: 0;
+	}
+
+	.columna p label{
+		display: block;
+	}
+
+	.columna select{
+		position: initial;
+	}
+
+	.principalIn table{
+		font-size: smaller;
+		width: 100%;
+		margin: 2% 0;
+
+	}	
+
+	.linea{
+		display: block;
+	}
+	.linea .mitad{
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.linea select{
+		width: 50%;
+		max-width: 250px;
+	}
+
+	.chatAdmin .sendAll button{
+		margin-top: 10px;
+	}
+
+	.principalIn *{
+		box-shadow: none;
+	}
+
+
+
 
 }
