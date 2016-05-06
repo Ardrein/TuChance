@@ -1,8 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-
 	<title>INICIO DE SESION-TU CHANCE</title>
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/angular-route.js"></script>
+
+	<script type="text/javascript">angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="'+window.location.pathname+'" />'));</script>
+
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/main.ctrl.js"></script>
+	
 	<link rel="stylesheet" type="text/css" href="css/copy.css">
 </head>
 <body>
@@ -25,19 +32,38 @@
 					<h3>INICIAR SESION</h3>
 				</header>
 				<div class="campos">
+					<form class="campos" action="login.php" method="POST">
 					<p>
 						<label name="usuario">Usuario</label>
-						<input id="usuario" name="usuario" />		
+						<input id="usuario" name="username" />		
 					</p>
 					<p>
 						<label name="password">Password</label>
-						<input id="password" name="password" type="password"></input>
+						<input id="password" name="pass" type="password"></input>
 					</p>
+				
 				</div>
 				<p class="submit">
-					<input value="LOGIN" class="iniciarSesion" type="submit" />
+					<input name="login" value="LOGIN" class="iniciarSesion" type="submit" />
 				</p>
-
+					</form>
+					<form class="campos" action="prueba.php" method="POST">
+						<div class="campos">
+							<input class="form-control" placeholder="Ingrese su nombre" name="nombre" required/>
+						</div>
+						<div class="campos">
+							<input class="form-control" placeholder="Ingrese su username" name="username" required/>
+						</div>
+						<div class="campos">
+							<input class="form-control" placeholder="Ingrese su contraseña" name="pass" type="password" required/>
+						</div>
+						<div class="campos">
+							<input class="form-control" placeholder="Ingrese su contraseña nuevamente" name="pass2" type="password" required/>
+						</div>
+						<div class="campos">
+							<input name="go"class="btn btn-default" type="submit" value="Registrarse"/>
+						</div>
+					</form>
 			</div>
 		</div>
 		

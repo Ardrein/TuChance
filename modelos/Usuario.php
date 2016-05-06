@@ -1,6 +1,6 @@
 <?php
 
-require_once 'libs/Modelo.php';
+require_once '/libs/Modelo.php';
 
 class Usuario extends Modelo{
 	function __construct(){

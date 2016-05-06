@@ -1,6 +1,6 @@
 <?php
 
-require_once'libs/Controlador.php';
+require_once 'libs/Controlador.php';
 
 class Home extends Controlador {
     /* private $parametros;
@@ -38,10 +38,10 @@ public function registrar(){
         $insertar = $usuario->insertUsuarios($parametros);
         if($insertar){
             echo "Registrado exitosamente.";
-             $this->cargarVista("index");
+             $this->cargarVista("login");
         }else{
             echo "Error al registrar.";
-             $this->cargarVista("index");
+             $this->cargarVista("login");
         }
     }
 }
