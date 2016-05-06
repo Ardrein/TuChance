@@ -149,6 +149,7 @@
 
 	.chatAdmin .sendAll button{
 		margin-top: 10px;
+		width: 9%;
 	}
 
 	.linea select{
@@ -365,7 +366,7 @@
     position: relative;
     right: 0;
 	}
-	
+
 	.banner{
 
 
