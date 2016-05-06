@@ -1,0 +1,384 @@
+
+/*
+-----DESKTOP---------------
+*/
+
+@media only screen and (min-width: 1025px){
+	.principalIn{
+		min-height: 600px;
+		height: 100%;
+	}
+
+	.chatInput2>textarea{
+		margin: 0 4% 0 0;
+	}
+
+	.columna2, .columna{
+		height: 100%;
+	}
+
+}
+
+
+/*
+-----TABLETS---------------
+*/
+@media only screen and (min-width:768px) and (max-width: 1024px)  {
+
+
+	.loginMain{
+		width: 100%;
+	}
+
+	.banner{
+
+
+		background: red;
+
+	}
+
+	.caja{
+		height: 90%;
+	}
+
+	.columna{
+		float: none;
+		width: 100%;
+		padding: 3%;
+	}
+
+	.columna img{
+		max-width: 400px;
+	}
+
+
+	.columna2{
+		float: none;
+		width: 100%;
+		padding: 3%;
+		column-count:2;
+	}
+
+	.tabla{
+	}
+
+	.columna2 .total{
+		-webkit-border-radius: 0.5em;
+		-moz-border-radius: 0.5em;
+		border-radius: 0.5em;
+
+		box-shadow: 1px 1px 0 0 black, -1px -1px 0 0 white;
+	}
+
+	.columna2 input[type="date"], .columna2 input[type="time"]{
+		width: 100%;
+		position: relative;
+		float: none;
+	}
+
+	.columna2 p label{
+		display: block;
+	}
+
+	.columna2 p{
+		display: block;
+		height: auto;
+	}
+	.columna2 .pDer button{
+		min-width: 15%;
+		box-shadow: none;
+		padding: 1%;
+	}
+
+	.columna2 p label{
+		display: block;
+	}
+
+	.columna2 table{
+		width: 70%;
+		margin: 5% auto;
+	}
+
+	.columna2 .buscar input{
+		float: none;
+		position: relative;
+	}
+
+	.columna2 input, .columna p input, .tabla p input{
+		max-width: 250px;
+	}
+
+
+	.columna2 .total p label{
+		display: inline-block;
+	}
+
+	.columna2 p input[type="text"]{
+		float: none;
+		width: 100%;
+		margin: 5px 0;
+	}
+	.principalIn{
+		width: 100%;
+		margin: 50px 0 0 0;
+		right: 0;
+		padding: 1%;
+		display: block;
+	}
+
+	.principalIn table{
+		font-size: 10px;
+		width: 90%;
+		margin: 2% auto;
+
+	}
+
+	.principalIn>header{
+		margin-bottom: 10px;
+	}
+
+	.fila, .fila2, .caja{
+		padding: 0;
+		box-shadow: none;
+	}
+
+
+	.chatInput2>textarea{
+		margin: 0 4% 0 0;
+	}
+
+	.chatAdmin .sendAll button{
+		margin-top: 10px;
+	}
+
+	.linea select{
+		width: 30%;
+		max-width: 250px;
+	}
+
+
+}
+
+/*
+-----MOBILE HORIZONTAL---------------
+*/
+@media only screen and (min-width: 321px) and (max-width: 767px){
+
+	
+
+	.loginMain{
+		width: 100%;
+		border-collapse: collapse;
+		display: block;
+		margin: 150px 0;
+		height: 100%;
+
+		column-count:1;
+		-webkit-column-count:1;
+		-moz-column-count:1;
+	}
+
+	.logo{
+		display: none;
+	}
+
+	.login{
+		display: block;
+		height: 100%;
+		
+	}
+	.campos{
+		margin: 0;
+
+	}
+
+	.campos p{
+		display: block;
+		position: relative;
+		height: auto;
+		margin: 10px 0 0;
+	}
+
+	.campos label{
+		width: 29%;
+		padding: 0;
+		display: inline-block;
+	}
+
+	.campos input{
+		width: 69%;
+		display: inline-block;
+		max-width: 300px;
+		position: absolute;
+		right: 0;
+	}
+
+	.banner{
+
+
+		background: black;
+
+	}
+
+	.caja{
+		height: 90%;
+	}
+
+	.principalIn{
+		font-size: small;
+		width: 100%;
+		margin: 50px 0 0 0;
+		right: 0;
+		padding: 1%;
+	}
+
+
+	.principalIn button, input[type="submit"]{
+		padding: 1%;
+	}
+
+	.principalIn>header{
+		margin-bottom: 10px;
+	}
+
+	.fila, .fila2, .caja{
+		padding: 0;
+		box-shadow: none;
+	}
+	.columna2{
+		float: none;
+		width: 100%;
+		padding: 3%;
+	}
+
+	.columna2 input[type="date"], .columna2 input[type="time"]{
+		width: 100%;
+		position: relative;
+		float: none;
+	}
+
+	.columna2 p label{
+		display: block;
+	}
+
+	.columna2 p{
+		display: block;
+		height: auto;
+	}
+	.columna2 .pDer button{
+		min-width: 15%;
+	}
+
+
+	.columna2 .total p label{
+		display: table-cell;
+	}
+
+	.columna2 p input[type="text"]{
+		float: none;
+		width: 100%;
+		margin: 5px 0;
+	}
+
+
+
+
+	.chatInput2>button{
+		padding: 0;
+		width: 15%;
+	}
+
+	.tabla{
+		box-shadow: none;
+		padding: 0;
+	}
+
+	.columna p label{
+		display: block;
+	}
+
+	.columna select{
+		position: initial;
+	}
+
+	.principalIn table{
+		width: 70%;
+		margin: auto;
+	}
+
+
+
+
+	
+
+}
+
+/*
+-----MOBILE VERTICAL---------------
+*/
+@media only screen and (max-width: 320px){
+
+
+.loginMain{
+		width: 100%;
+		border-collapse: collapse;
+		display: block;
+		margin: 150px 0;
+		height: 100%;
+
+		column-count:1;
+		-webkit-column-count:1;
+		-moz-column-count:1;
+	}
+
+	.logo{
+		display: none;
+	}
+
+	.login{
+		display: block;
+		height: 100%;
+		
+	}
+	.campos{
+		margin: 0;
+
+	}
+
+	.campos p{
+		display: block;
+		position: relative;
+		height: auto;
+		margin: 10px 0 0;
+	}
+
+	.campos label{
+		    width: 100%;
+    padding: 0;
+    display: block;
+	}
+
+	.campos input{
+		    width: 100%;
+    display: block;
+    max-width: 300px;
+    position: relative;
+    right: 0;
+	}
+	
+	.banner{
+
+
+		background: yellow;
+
+	}
+
+	.principalIn{
+		font-size: small;
+		width: 100%;
+		margin: 50px 0 0 0;
+		right: 0;
+		padding: 1%;
+	}
+
+}

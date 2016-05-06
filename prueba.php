@@ -1,8 +1,16 @@
 <?php
+<<<<<<< HEAD
 
 require_once 'libs/Controlador.php';
 
 	if(isset($_POST['go'])){ // button name
+=======
+//PHP encargado de obtener todos los libros
+//para ello es enecesario importar nuestro modelo llamado libro.
+require_once 'libs/Controlador.php';
+
+if(isset($_POST['go'])){ // button name
+>>>>>>> origin/master
 		$parametros = array();
 	    $parametros["nombre"] = $_POST["nombre"];
 	    $parametros["username"] = $_POST["username"];
@@ -14,10 +22,17 @@ require_once 'libs/Controlador.php';
 	        $usuario = cargarModelo("Usuario");
 	        $insertar = $usuario->insertUsuarios($parametros);
 	        if($insertar){
+<<<<<<< HEAD
 	             cargarVista("login");
 	           
 	        }else{
 
+=======
+	            echo "Registrado exitosamente.";
+	             cargarVista("login");
+	        }else{
+	            echo "Error al registrar.";
+>>>>>>> origin/master
 	             cargarVista("login");
 	        }
 	    }
