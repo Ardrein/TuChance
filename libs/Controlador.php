@@ -9,7 +9,7 @@ class Controlador{
 	protected function cargarModelo($modelo){
 		$modelo = ucfirst(strtolower($modelo));
 
-		$urlFile = 'modelos/'.$modelo.'.php';
+		$urlFile = '../modelos/'.$modelo.'.php';
 
 		if(file_exists($urlFile)){
 			include $urlFile;
@@ -29,7 +29,7 @@ class Controlador{
 	protected function cargarVista($vista){
 		$vista = ucfirst(strtolower($vista));
 
-		$urlFile = 'vistas/'.$vista.'.php';
+		$urlFile = ''.$vista.'.html';
 
 		if(file_exists($urlFile)){
 		  require_once($urlFile);
