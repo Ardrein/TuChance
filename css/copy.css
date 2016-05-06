@@ -122,6 +122,7 @@ body{
 	display: table;
 	margin: 4% auto;
 
+	column-count:2;
 	-moz-column-count: 2;
 	-webkit-column-count: 2;
 
@@ -415,7 +416,6 @@ Principal
 	border-spacing: 0.1em;
 	padding: 2%;
 	width: 80%;
-	min-height: 600px;
 	height: 100%;
 	display: table;
 	margin: 60px 2% 4% 10%;
@@ -476,7 +476,6 @@ Principal
 	-moz-border-radius: 0.5em;
 	border-radius: 0.5em;
 
-	height: 100%;
 
 }
 
@@ -496,8 +495,12 @@ Principal
 	-moz-border-radius: 0.5em;
 	border-radius: 0.5em;
 
-	height: 100%;
+	
 
+}
+
+.columna2 .buscar input{
+	float: none;
 }
 
 .columna2 .buscar button{
@@ -576,17 +579,17 @@ Principal
 .tabla p label, .columna2 p label{
 	display: table-cell;
 	width: 20%;
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 
 .principalIn p textarea{
- 	width: 100%;
+	width: 100%;
 	resize:none;
 	overflow-y:scroll;
 	min-height: 50px;
 
 	padding: 2%;
- }
+}
 
 
 
@@ -724,6 +727,7 @@ Tablas
 .imagen{
 	text-align: center;
 	display: table;
+	width: 100%;
 	position: relative;
 	border-collapse: collapse;
 	margin: auto;
@@ -752,8 +756,9 @@ Tablas
 }
 
 .linea select{
-	right: 10px;
+	right: 0;
 	top: 0;
+	width: 30%;
 	position: absolute;
 }
 
@@ -899,6 +904,7 @@ CHAT
 .chatBody2> textarea{
 	width: 100%;
 	height: 95%;
+	min-height: inherit;
 	overflow-y:scroll;
 	resize:none;
 }
@@ -908,15 +914,18 @@ CHAT
 	display: block;
 	height: 20%;
 	padding: 0.5% 0;
+	border-collapse: collapse;
+	min-height: 70px;
 
 }
 
 .chatInput2>textarea{
-	width: 80%;
+	width: 85%;
 	min-width: 100px;
 	height: 100%;
 	overflow-y:scroll;
 	resize:none;
+	min-height: inherit;
 	display: inline-block;
 
 }
@@ -926,8 +935,10 @@ CHAT
 .chatInput2>button {
 	width: 10%;
 	vertical-align: top;
+	padding: 0;
 	height: 100%;
-		display: inline-block;
+	min-height: inherit;
+	display: inline-block;
 }
 
 .chatAdmin .sendAll{
